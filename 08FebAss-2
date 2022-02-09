@@ -1,0 +1,20 @@
+/*Assignment-2 Y.L.Ramakrishna AWDC KKD*/
+#include<stdio.h>  
+void display(int);  
+int main()  
+{  
+    int n=10;  
+    printf("\nNumbers from 10 To 1 are:\n");  
+    display(n);    
+    return 0;  
+}  
+void display(int num)  
+{  
+    if(num)  
+    {
+        printf("\n%d", num);  
+        display(num-1);  
+    }
+    else  
+        return;  
+}
